@@ -4,7 +4,7 @@
 
 template<typename T>
 class TPQueue {
-private:
+ private:
     struct ITEM {
         T value;
         ITEM* next;
@@ -17,7 +17,7 @@ private:
         return item;
     }
 
-public:
+ public:
     TPQueue() : head(nullptr) { }
     void push(const T& item) {
         if (!head) {
